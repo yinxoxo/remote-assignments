@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Language Dropdown with Icon</title>
+    <title>Google for Developers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img
-            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png"
-            alt="Google Logo"
-          />
+          <img src="img/social.png" alt="Google Logo" />
           <a href="#" class="logo-text">for Developers</a>
         </div>
         <ul class="nav-links">
@@ -21,14 +25,17 @@
           <li><a href="#solutions">Solutions</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#learn">Learn</a></li>
+          <li><a href="#Community">Community</a></li>
           <li><a href="#Blog">Blog</a></li>
           <li><a href="#more">More</a></li>
         </ul>
         <div class="nav-right">
           <div class="search-bar">
+            <img src="img/search.png" alt="search" class="search-icon" />
             <input type="text" placeholder="Search" />
           </div>
           <div class="language-selector">
+            <img src="img/internet.png" alt="global" class="dropbtn-icon" />
             <button class="dropbtn" onclick="toggleDropdown()">
               English &#9662;
             </button>
@@ -41,6 +48,11 @@
               <a href="#">Indonesia</a>
             </div>
           </div>
+          <div class="three-dot-btn">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
           <div class="profile-icon">
             <span>CY</span>
           </div>
@@ -48,10 +60,78 @@
       </nav>
     </header>
 
-    <main>
-      <!-- 網站的主要內容 -->
-    </main>
+    <div class="banner">
+      <div class="banner-message">
+        Build with Gemini, our largest and most capable AI model.
+        <a
+          href="https://aistudio.google.com/app/prompts/new_chat/?utm_source=gfd&amp;utm_medium=referral&amp;utm_campaign=top_bar&amp;utm_content="
+          >Get an API key.</a
+        >
+      </div>
+    </div>
 
-    <script src="scripts.js"></script>
+    <section class="diversite-landing-row">
+      <div class="devsite-landing-row-inner">
+        <div class="devsite-landing-row-html">
+          <div class="dgc-hero-fullscreen-item">
+            <h2 id="rewatch-google-io-2024">
+              Rewatch<br />
+              Google I/O 2024
+            </h2>
+            <p>
+              Rewind and relive Google I/O 2024. Keynotes and <br />sessions are
+              now available on-demand.
+            </p>
+            <div class="watch-button">Watch on-demand</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row-bottom">
+      <div class="row-bottom-wrapper">
+        <div class="devsite-recommended-content-header">
+          <div class="content-wrapper">
+            Select interests to filter
+            <span class="info-icon">i </span>
+            <span class="tooltip-text"
+              >Refine recommendations shown by selecting filters.</span
+            >
+          </div>
+
+          <div>Create account</div>
+        </div>
+        <div class="carousel-container" id="carousel-container">
+          <div class="carousel" id="carousel">
+            <div class="carousel-item">Ads</div>
+            <div class="carousel-item">AI & Machine Learning</div>
+            <div class="carousel-item">Android</div>
+            <div class="carousel-item">AR/VR</div>
+            <div class="carousel-item">C</div>
+            <div class="carousel-item">C#</div>
+            <div class="carousel-item">ChromeOS</div>
+            <div class="carousel-item">Cloud</div>
+            <div class="carousel-item">Design</div>
+            <div class="carousel-item">Firebase</div>
+            <div class="carousel-item">Flutter</div>
+            <div class="carousel-item">Google Assistant</div>
+            <div class="carousel-item">Google Play</div>
+            <div class="carousel-item">Internet of Things (IoT)</div>
+            <div class="carousel-item">iOS</div>
+            <div class="carousel-item">Location/Maps</div>
+            <div class="carousel-item">Mobile</div>
+            <div class="carousel-item">Open Source</div>
+            <div class="carousel-item">Payments</div>
+            <div class="carousel-item">Search</div>
+            <div class="carousel-item">Smart Home Ecosystem</div>
+            <div class="carousel-item">Terraform</div>
+            <div class="carousel-item">Web</div>
+          </div>
+        </div>
+        <div class="scroll-button">></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
