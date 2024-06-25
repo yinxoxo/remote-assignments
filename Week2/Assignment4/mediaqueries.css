@@ -1,0 +1,26 @@
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
