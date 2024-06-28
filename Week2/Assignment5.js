@@ -1,13 +1,19 @@
 function twoSum(nums, target) {
   // your code here
+
+  //儲存數字及index
+  let numList = {};
+
   for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j];
-      }
+    let need = target - nums[i];
+
+    if (numList.hasOwnProperty(need)) {
+      return [numList[need], i];
     }
+    numList[nums[i]] = i;
   }
 }
+
 /*
 	For example:
 		twoSum([2, 7, 11, 15], 9);
