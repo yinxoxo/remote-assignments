@@ -97,7 +97,6 @@ nav {
   height: 35px;
   cursor: pointer;
   z-index: 99;
-
   appearance: none;
   background: none;
   outline: none;
@@ -126,6 +125,13 @@ nav {
 
 .hamburger.is-active .bar {
   opacity: 0;
+}
+
+/*打開漢堡菜單時固定在右上*/
+.hamburger.is-active {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .mobile-nav {
