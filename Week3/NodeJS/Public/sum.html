@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="numberForm">
+      <form id="numberForm">
+        <label method="post">Enter a positive integer</label>
+        <input type="text" />
+        <button type="submit">Submit</button>
+      </form>
+      <h1 id="result"><h1></h1>
+    </div>
+    
+  </body>
+
+  <script>
+    const numberForm = document.getElementById("numberForm");
+    
+    const result=document.getElementById("result")
+
+    numberForm.addEventListener("submit",(event)=>{
+      const numberValue = document.querySelector("input").value;
+      event.preventDefault()
+      if(numberValue === ''){
+        result.textContent='Lack of Parameter'
+      }else if(!Number.isInteger(Number(numberValue))|| numberValue<=0||isNaN(numberValue)){
+        result.textContent='Wrong Parameter'
+      }else{
+          fetch(`/getData?number=${numberValue}`)
+            .then(function(response){return response.text()})
+            .then(function(data){result.textContent = `${data}`})
+           
+          }
+        }
+        );
+
+
+  </script>
+</html>
