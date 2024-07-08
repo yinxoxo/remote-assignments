@@ -5,7 +5,7 @@ const router = express.Router();
 router.get("/getData", (req, res) => {
   const number = req.query.number;
 
-  if (number === undefined) {
+  if (number === undefined || number === "") {
     res.send("Lack of Parameter");
   } else if (
     //不是數字、整數、正數
