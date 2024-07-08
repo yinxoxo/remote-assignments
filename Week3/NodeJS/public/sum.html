@@ -24,23 +24,14 @@
     numberForm.addEventListener("submit", (event) => {
       const numberValue = document.querySelector("input").value;
       event.preventDefault();
-      if (numberValue === "") {
-        result.textContent = "Lack of Parameter";
-      } else if (
-        !Number.isInteger(Number(numberValue)) ||
-        numberValue <= 0 ||
-        isNaN(numberValue)
-      ) {
-        result.textContent = "Wrong Parameter";
-      } else {
-        fetch(`/getData?number=${numberValue}`)
-          .then(function (response) {
-            return response.text();
-          })
-          .then(function (data) {
-            result.textContent = `${data}`;
-          });
-      }
+
+      fetch(`/getData?number=${numberValue}`)
+        .then(function (response) {
+          return response.text();
+        })
+        .then(function (data) {
+          result.textContent = `${data}`;
+        });
     });
   </script>
 </html>
