@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import Header from "./Header";
-import Welcome from "./Welcome";
-import SectionTitle from "./SectionTitle";
-import GridContainer from "./GridContainer";
-import CtaButton from "./CtaButton";
+import Header from "./components/Header";
+import Welcome from "./components/Welcome";
+import SectionTitle from "./components/SectionTitle";
+import GridContainer from "./components/GridContainer";
+import CtaButton from "./components/CtaButton";
 
 function App() {
   {
