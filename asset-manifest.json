@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/remote-assignments.github.io/static/css/main.c12a9fc9.css",
+    "main.js": "/remote-assignments.github.io/static/js/main.9adbb252.js",
+    "index.html": "/remote-assignments.github.io/index.html",
+    "main.c12a9fc9.css.map": "/remote-assignments.github.io/static/css/main.c12a9fc9.css.map",
+    "main.9adbb252.js.map": "/remote-assignments.github.io/static/js/main.9adbb252.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c12a9fc9.css",
+    "static/js/main.9adbb252.js"
+  ]
+}
