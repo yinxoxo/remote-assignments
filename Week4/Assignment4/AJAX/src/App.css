@@ -1,0 +1,89 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/*DataList*/
+
+.dataList {
+  width: 50vw;
+}
+
+li {
+  padding: 10px 0px;
+  align-items: flex-start;
+  list-style-type: none;
+  border: 1px rgba(128, 128, 128, 0.41) solid;
+}
+
+.itemFirst {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.name {
+  margin: 0px;
+  height: fit-content;
+  color: rgb(34, 99, 231);
+  margin-left: 20px;
+}
+
+.visibility {
+  margin-left: 10px;
+  height: fit-content;
+  padding: 0 5px;
+  width: 50px;
+  border: 1px rgba(128, 128, 128, 0.41) solid;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.description,
+.topicItem {
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.topicContainer {
+  padding-left: 15px;
+  display: flex;
+}
+
+.topicItem {
+  width: fit-content;
+  padding: 0px 10px;
+  margin: 5px 5px;
+  color: rgb(34, 99, 231);
+  background-color: rgba(0, 170, 255, 0.22);
+  border-radius: 10px;
+}
+
+.moreButton {
+  background-color: white;
+  color: rgb(34, 99, 231);
+  border: none;
+  outline: none;
+}
+
+.moreButton:focus {
+  outline: none;/
+}
+
